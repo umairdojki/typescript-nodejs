@@ -6,7 +6,8 @@
   "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "prettier"
   ],
   "ignorePatterns": [
     "dist"
@@ -18,7 +19,14 @@
   },
   "plugins": [
     "@typescript-eslint",
-    "jest"
+    "jest",
+    "prettier"
   ],
-  "root": true
+  "root": true,
+  "rules": {
+    "jest/expect-expect": [
+      "off"
+    ],
+    "prettier/prettier": "error"
+  }
 }
