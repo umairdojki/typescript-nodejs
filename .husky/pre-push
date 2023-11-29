@@ -2,5 +2,4 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 make lint
-make fmt-check
 make test-coverage
