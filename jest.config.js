@@ -14,4 +14,7 @@ module.exports = {
     },
   },
   testTimeout: 60000,
+  fakeTimers: {
+    enableGlobally: true,
+  },
 };
